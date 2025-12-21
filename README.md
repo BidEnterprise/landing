@@ -1,50 +1,71 @@
-# Bid Enterprise Landing Page
+﻿# BidEnterprise
 
-A modern, responsive React landing page built with **Vite**, **React**, **Tailwind CSS**, and **lucide-react** icons.  
-This project is a frontend-only UI/landing page (no backend).
+Modern enterprise landing page built with React, Vite, and Tailwind CSS.
 
-## Tech Stack
-- React
-- Vite
-- Tailwind CSS
-- lucide-react
+## Requirements
 
-## Installation
+- Node.js 18+ recommended
+- npm (or your preferred package manager)
+
+## Install
+
 ```bash
 npm install
 ```
 
-## Run in Development
+## Run (development)
+
 ```bash
 npm run dev
 ```
-The app will run locally (usually at `http://localhost:5173`).
 
-## Build for Production
+## Build
+
 ```bash
 npm run build
 ```
 
-Production files will be generated in the `dist/` folder.
+## Preview production build
 
-## Preview Production Build (Optional)
 ```bash
 npm run preview
 ```
 
-## Deploy to GitHub Pages
-1. Build the project:
+## Lint
+
 ```bash
-npm run build
+npm run lint
 ```
-2. Upload the contents of the `dist/` folder to your GitHub Pages repository.
-3. Set GitHub Pages source to the deployed branch/folder.
 
-## Project Structure
-- Main component: `src/App.jsx`
-- Entry point: `src/main.jsx`
+## Tests
 
-## Notes
-- Pure frontend project
-- No backend or API
-- Animations handled via Tailwind CSS and custom styles
+No automated tests are configured yet.
+
+## Project structure
+
+```
+src/
+  components/
+    common/
+      AnimatedCounter.jsx
+      FeatureCard.jsx
+      SectionTitle.jsx
+    sections/
+      CTA.jsx
+      Features.jsx
+      Footer.jsx
+      Hero.jsx
+      Navbar.jsx
+      PlatformPreview.jsx
+      Stats.jsx
+      Testimonials.jsx
+  hooks/
+    useScrollReveal.js
+  pages/
+    Home.jsx
+  styles/
+    animations.css
+  App.jsx
+  index.css
+  main.jsx
+```
